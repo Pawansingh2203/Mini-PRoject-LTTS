@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1618492051 source:c:\users\jarvis\documents\lntts\mini project ltts\calc_ops.c
+	"headerforcalc.h"
+
+1618492667 c:\users\jarvis\documents\lntts\mini project ltts\headerforcalc.h
+	<stdio.h>
+	<stdlib.h>
+	"stdio_ext.h"
+
+1618494854 c:\users\jarvis\documents\lntts\mini project ltts\stdio_ext.h
+	<sys/cdefs.h>
+	<stdio.h>
+
+1618547397 source:c:\users\jarvis\documents\lntts\mini project ltts\main.c
+	"headerforcalc.h"
+
+1618500858 source:c:\users\jarvis\documents\lntts\mini project ltts\unity\unity.c
+	"unity.h"
+	<stddef.h>
+	<avr/pgmspace.h>
+
+1618500767 c:\users\jarvis\documents\lntts\mini project ltts\unity\unity.h
+	"unity_internals.h"
+
+1618499764 c:\users\jarvis\documents\lntts\mini project ltts\unity\unity_internals.h
+	"unity_config.h"
+	<setjmp.h>
+	<math.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdint.h>
+	<limits.h>
+	<stdio.h>
+	<stdio.h>
+	<time.h>
+	<time.h>
+
+1618501487 source:c:\users\jarvis\documents\lntts\mini project ltts\test\test_calculator.c
+	"C:\Users\jarvis\Documents\LNTTS\Mini Project LTTS\Unity\unity.h"
+	<C:\Users\jarvis\Documents\LNTTS\Mini Project LTTS\headerforcalc.h>
+	"C:\Users\jarvis\Documents\LNTTS\Mini Project LTTS\headerforcalc.h"
+

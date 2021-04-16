@@ -1,0 +1,59 @@
+# Name of the project
+PROJECT_NAME = Calculator
+
+# Output directory
+BUILD = build
+
+# All source code files
+SRC = C:\Users\jarvis\Desktop\MiniProject_Template-master\MiniProject_C\3_Implementation\src\calculator_operations
+
+# All test source files
+TEST_SRC =C:\Users\jarvis\Documents\LNTTS\Mini Project LTTS\Implementation\src/calc_ops.c\
+test/test_calculator.c\
+Unity/unity.c\
+
+TEST_OUTPUT = $(BUILD)/Test_$(Mini Project LTTS).out
+
+# All include folders with header files
+INC	= -Iinc\C:\Users\jarvis\Documents\LNTTS\Mini Project LTTS\Implementation\inc\headerforcalc
+-Iunity\
+
+#Library Inlcudes
+#INCLUDE_LIBS = 
+INCLUDE_LIBS = -lcunit
+
+# Project Output name
+PROJECT_OUTPUT = $(BUILD)/$(Mini Project LTTS).out
+
+# Document files
+DOCUMENTATION_OUTPUT = documentation/html
+
+# Default target built
+$(Mini Project LTTS):all
+
+# Run the target even if the matching name exists
+.PHONY: run clean test doc all
+
+all: $(SRC) $(BUILD)
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+
+# Call `make run` to run the application
+run:$(Mini Project LTTS)
+	./$(Mini Project LTTS).out
+
+# Document the code using Doxygen
+doc:
+	make -C ./documentation
+
+# Build and run the unit tests
+test:$(BUILD)
+	gcc $(C:\Users\jarvis\Documents\LNTTS\Mini Project LTTS\Implementation\Test\test_calculator) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+	./$(TEST_OUTPUT)
+
+# Remove all the built files, invoke by `make clean`
+clean:
+	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+
+# Create new build folder if not present
+$(BUILD):
+	mkdir build

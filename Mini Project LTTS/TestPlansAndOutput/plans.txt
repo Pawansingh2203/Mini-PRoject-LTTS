@@ -1,0 +1,10 @@
+* Checked if the calculator is a normal calculator or a scientific calculator.
+*Verified that all the buttons are present and text written on them is readable.
+*Checked the arithmetic operations are working fine- +, -, /, * etc.
+*Verified that the calculator gives the correct result in case of operations containing   decimal numbers.
+*Verified the number of digits allowed to enter in the calculator for any operation.
+*Verified the limit of the response value.
+*Verified the functioning of memory functions.
+*Verified that on pressing two operators one after the other, the latest one will override the previous operator.
+*Verified the state of the calculator when two buttons are pressed simultaneously.
+Verify if the user can delete digits one by one using the backspace key
